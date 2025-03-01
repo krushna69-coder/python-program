@@ -1,0 +1,18 @@
+# import pandas as pd
+
+# data = {
+#     "Name": ["krushna", "kk", "om"],
+#     "Age": [25, 30, 22],
+#     "City": ["New York", "Los Angeles", "Chicago"]
+# }
+
+# df = pd.DataFrame(data)
+
+# df.to_csv("data.csv", index=False)  
+
+# print("CSV file created successfully!")
+
+import pandas as pd
+df = pd.read_csv(r"C:\Users\ADMIN\OneDrive\Desktop\python\data.csv")
+df = df.fillna(0)  # Replace NaN with 0
+print(df)
